@@ -3,7 +3,7 @@ import ProductItem from './ProductItem';
 
 const ProductList = ({ products, addToCart }) => {
   return (
-    <div className="product-list">
+    <div className="product-list" data-testid="productlist">
       {products.map((product) => (
         <ProductItem key={product.id} product={product} addToCart={addToCart} />
       ))}

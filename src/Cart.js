@@ -15,13 +15,13 @@ const Cart = ({ cartItems }) => {
   const total = cartItems.reduce((sum, item) => sum + item.price, 0);
   const rewardPoint = calculateReward(total);
   return (
-    <div className="cart">
+    <div className="cart" data-testid="cart">
       <h2>Cart</h2>
       {cartItems.length === 0 ? (
-        <p>Your cart is empty</p>
+        <p data-testid="emptycart">Your cart is empty</p>
       ) : (
         <>
-          <ul>
+          <ul data-testid="cartlist">
             {cartItems.map((item, index) => (
               <li key={index}>
                 {item.name} - ${item.price}
