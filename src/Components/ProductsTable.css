@@ -1,0 +1,21 @@
+.table {
+    border-spacing: 0;
+}
+
+.table thead tr th {
+    border-top: 1px solid;
+    border-right: 1px solid;
+    padding: 5px 10px;
+    background: #e0e0e0;
+}
+
+.table tbody tr td {
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    padding: 5px 10px;
+    background: #f1efef;
+}
+.table thead tr th:nth-child(1),
+.table tbody tr td:nth-child(1) {
+    border-left: 1px solid;
+}
